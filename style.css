@@ -2,6 +2,9 @@
     --clr-primary: hsl(338, 100%, 32%);
     --clr-secondary: hsl(327, 100%, 45%);
     --clr-accent: hsl(256, 35%, 27%);
+    --clr-nav-hover: hsl(298, 99%, 41%);
+    --clr-nav-text: #333;
+    --clr-base-text: #404040;
 
     --ff-base: "Lora", sans-serif;
     --ff-secondary: "Monotype Corsiva", sans-serif;
@@ -9,9 +12,10 @@
     --fw-regular: 400;
     --fw-bold: 700;
 
-    --fs-200: 11px;
-    --fs-300: 14px;
-    --fs-400: 16px;
+    --fs-100: 11px;
+    --fs-200: 14px;
+    --fs-300: 16px;
+    --fs-400: 18px;
     --fs-500: 20px;
     --fs-600: 32px;
     --fs-700: 40px;
@@ -36,10 +40,47 @@ body {
     min-height: 100vh;
     font-family: var(--ff-base);
     font-size: var(--fs-300);
+    color: var(--clr-base-text);
     background-color: var(--clr-secondary);
 }
 
-.primary-nav nav ul {
-    display: flex;
-    gap: 2rem;
+.bottom-header {
+    background-color: var(--clr-secondary);
 }
+
+.primary-nav {
+    margin-top: 0.8rem;
+    background-color: whitesmoke;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    box-shadow: 20px 20px;
+}
+
+.primary-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 1.5rem;
+    list-style: "/    ";
+}
+
+.primary-nav ul li {
+    text-transform: uppercase;
+}
+
+.primary-nav ul li:first-child {
+    list-style: none;
+}
+
+.primary-nav ul li a {
+    text-decoration: none;
+    color: var(--clr-nav-text);
+    transition: color 0.5s ease-out;
+}
+
+.primary-nav ul li a:hover,
+.primary-nav ul li a:focus {
+    color: var(--clr-nav-hover);
+}
+
