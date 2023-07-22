@@ -2,14 +2,17 @@
     --clr-primary: hsl(338, 100%, 32%);
     --clr-secondary: hsl(327, 100%, 45%);
     --clr-accent: hsl(256, 35%, 27%);
+    --clr-content-background: whitesmoke;
     --clr-nav-hover: hsl(298, 99%, 41%);
     --clr-nav-text: #333;
+    --clr-h1: #3E3E3E;
     --clr-base-text: #404040;
 
     --ff-base: "Lora", sans-serif;
     --ff-secondary: "Monotype Corsiva", sans-serif;
 
     --fw-regular: 400;
+    --fw-semi-bold: 500;
     --fw-bold: 700;
 
     --fs-100: 11px;
@@ -44,16 +47,15 @@ body {
     background-color: var(--clr-secondary);
 }
 
-.bottom-header {
-    background-color: var(--clr-secondary);
+header {
+    background-color: var(--clr-content-background);
 }
 
 .primary-nav {
     margin-top: 0.8rem;
-    background-color: whitesmoke;
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
-    box-shadow: 20px 20px;
+    border-bottom: 2px solid black;
 }
 
 .primary-nav ul{
@@ -84,3 +86,17 @@ body {
     color: var(--clr-nav-hover);
 }
 
+
+.bottom-header {
+    
+}
+
+.bottom-header h1 {
+    font-size: var(--fs-700);
+    color: var(--clr-h1);
+    text-transform: uppercase;
+}
+
+.bottom-header h1 a {
+    
+}
