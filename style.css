@@ -45,6 +45,7 @@ body {
     font-size: var(--fs-300);
     color: var(--clr-base-text);
     background-color: var(--clr-secondary);
+    background-image: url("imgs/background.webp");
 }
 
 header {
@@ -118,4 +119,17 @@ header {
 
 .bottom-header p {
     font-family: var(--ff-secondary);
+}
+
+main {
+    margin-top: 2.7rem;
+    max-width: 1140px;
+    border: 2px solid black;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+main img {
+    width: 100%;
+    height: auto;
 }
