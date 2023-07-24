@@ -88,16 +88,8 @@ header {
 }
 
 .primary-nav ul li a {
-    text-decoration: none;
     color: var(--clr-nav-text);
-    transition: color 0.5s ease-out;
 }
-
-.primary-nav ul li a:hover,
-.primary-nav ul li a:focus {
-    color: var(--clr-hover);
-}
-
 
 .bottom-header {
     padding: 1.7rem;
@@ -111,10 +103,16 @@ header {
 
 .bottom-header h1 a {
     color: var(--clr-h1);
+}
+
+.bottom-header h1 a,
+.primary-nav ul li a {
     text-decoration: none;
     transition: color 0.5s ease-out;
 }
 
+.primary-nav ul li a:hover,
+.primary-nav ul li a:focus,
 .bottom-header h1 a:hover,
 .bottom-header h1 a:focus {
     color: var(--clr-hover);
@@ -143,6 +141,13 @@ main img {
     gap: 2rem;
 }
 
+.home {
+    font-size: var(--fs-600);
+    text-align: center;
+    padding: 3rem;
+    font-weight: var(--fw-bold)
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -153,19 +158,18 @@ main img {
 
 .content article {
     padding: 3rem;
-    border-top: 2px solid var(--clr-secondary);
+    border-top: 2px solid var(--clr-primary);
     width: 95%;
 }
 
-.content h2 {
-    color: var(--clr-primary);
+.content img {
+    width: 300px;
+    height: 300px;
+    display: inline;
 }
 
-.home {
-    font-size: var(--fs-600);
-    text-align: center;
-    padding: 3rem;
-    font-weight: var(--fw-bold)
+.content h3 {
+    color: var(--clr-base-text);
 }
 
 
