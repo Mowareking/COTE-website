@@ -8,6 +8,7 @@
     --clr-h1: #3E3E3E;
     --clr-sidebar-h3: #4E4E4E;
     --clr-base-text: #404040;
+    --clr-footer-background: #263238;
 
     --ff-base: "Lora", sans-serif;
     --ff-secondary: "Monotype Corsiva", sans-serif;
@@ -127,6 +128,7 @@ main {
     margin-top: 2.7rem;
     max-width: 1140px;
     margin-inline: auto;
+    padding-bottom: 5rem;
     justify-content: center;
     display: flex;
     flex-flow: column wrap;
@@ -198,7 +200,6 @@ main img {
     align-items: center;
     flex: 0 0 30%;
     background-color: white;
-    max-height: 3305px;
 }
 
 .searchbar {
@@ -245,6 +246,23 @@ main img {
     text-transform: capitalize;
     text-align: left;
     color: var(--clr-base-text);
+    transition: color 0.5s ease-out;
+}
+
+.sidebar article p a:hover {
+    color: var(--clr-secondary)
+}
+
+footer {
+    background-color: var(--clr-footer-background);
+    outline: 2px solid rgba(255, 255, 255, 0.438);
+    outline-offset: 2rem;
+}
+
+footer p {
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
 
 @media screen and (max-width: 1170px) {
